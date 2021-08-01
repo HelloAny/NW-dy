@@ -42,8 +42,8 @@ for i in range(1, len(score_matrix)):
         else:
             top_score = score_matrix[i - 1][j] + score_dic['gap']
 
-        if 'left' in trace_back[i-1][j]:   
-          left_score = score_matrix[i][j - 1] + score_dic['extgap']
+        if 'left' in trace_back[i][j-1]:   
+            left_score = score_matrix[i][j - 1] + score_dic['extgap']
         else:
             left_score = score_matrix[i][j - 1] + score_dic['gap']
 
